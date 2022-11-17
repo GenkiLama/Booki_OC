@@ -1,0 +1,463 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:16px;
+}
+
+main{
+    width:90%;
+    margin:0 auto;
+}
+
+
+/** USEFULL **/
+
+.flex{
+    display:flex;
+}
+.ease-in:hover,
+.ease-in:focus{
+    transition: ease-in .25s;
+}
+.title{
+    font-size:19px;
+    font-weight: 600;
+}
+.container-radius{
+    border-radius: 30px;
+}
+.box-shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+}
+.radius-top{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.flashing:hover,
+.flashing:focus{
+    opacity: 1;
+	animation: flash 1.5s;
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.margin-top{
+    margin-top:0;
+}
+/**  HEADER  **/
+
+.header{
+    align-items:center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin:0 auto;
+}
+.header__logo{
+    max-width: 100px;
+    margin-left:15px;
+}
+.nav__link{
+    padding:40px 20px;
+    text-decoration: none;
+    color:black;
+    border-top:3px solid white;
+    display:block;
+}
+.nav__link:hover,
+.nav__link:focus{
+    color:#0065FC;
+    border-top:3px solid #0065FC;
+}
+.search_info--color{
+    color:rgb(68, 68, 68);
+}
+
+/**   SEARCH   **/
+
+
+.search{
+    margin-top:30px;
+}
+.search__title{
+    font-size:21px;
+}
+.search__subtitle{
+    font-size:14px;
+    font-weight: 400;
+}
+.search__form{
+    margin-top:20px;
+}
+.form__icon{
+    background-color: #F2F2F2;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    padding:15px 20px;
+    align-items: center;
+}
+.form__input{
+    border:1px solid #F2F2F2;
+    width:200px;
+    padding-left: 15px;
+}
+::placeholder{
+    color:black;
+    opacity: 1;
+    font-size:15px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__btn{
+    border:none;
+    background-color:#0065FC;
+    padding:20px;
+    color:white;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form__btn:hover,
+.form__btn:focus{
+    background-color: #DEEBFF;
+    color:black;
+}
+.form__btn--sm{
+    display:none;
+}
+.search_filter{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search_filter_title{
+    font-weight: 600;
+    margin-right: 20px;
+}
+.filters_list{
+    list-style: none;
+    flex-wrap: wrap;
+    padding-inline-start:0;
+}
+.filters_item{
+    margin-right:20px;
+    border:1px solid #F2F2F2;
+    border-radius:55px;
+    padding-right:20px;
+    align-items: center;
+    font-weight: 500;
+    font-size:15px;
+}
+.filters_item:hover,
+.filters_item:focus{
+    background-color: #0065FC;
+    color:white;
+    cursor: pointer;
+}
+.filter_icon{
+    background-color:#DEEBFF;
+    padding:15px;
+    border-radius: 100%;
+    margin: -1px 15px -1px -2px;
+    color:#0065FC;
+}
+.filter_icon--adjust{
+    padding:15px 18px;
+}
+.search_info{
+    align-items: center;
+}
+.info_icon{
+    border:1px solid #383838;
+    padding:13px 10px;
+    border-radius:100%;
+    margin-right: 20px;
+    color:#0065FC;
+}
+/**    HOSTING   **/
+.hosting{
+    width:60%;
+    background-color: #F2F2F2;
+    padding:20px 30px;
+}
+.hosting_cards{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hosting_card{
+    width:30%;
+    flex-direction: column;
+    background-color: white;
+    padding:1%;
+    border-radius:20px;
+    text-decoration: none;
+    color:black;
+    margin:20px 0;
+}
+.hosting_card_img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+}
+.hosting_card_content{
+    padding:0 10px;
+}
+.card_title{
+    font-size:14px;
+    margin:7px 0;
+    font-weight: 600;
+}
+.card_content{
+    font-size:12px;
+    margin:7px 0;
+    font-weight: 400;
+}
+.card_content_pricing{
+    font-weight: 600;
+}
+.rating-icon{
+    color:#0065FC;
+}
+.hosting_showmore{
+    padding:30px 0 0 0;
+}
+.hosting_showmore a{
+    text-decoration: none;
+    color:black;
+    font-size:16px;
+    font-weight: 600;
+}
+.hosting_showmore a:hover,
+.hosting_showmore:focus{
+    color:#0065FC;
+}
+.most-popular{
+    width:30%;
+    background-color: #F2F2F2;
+    margin-left:20px;
+    padding:20px 30px;
+}
+.most-popular_title{
+    justify-content: space-between;
+    align-items: center;
+}
+.popular_cards_container{
+    flex-direction: column;
+}
+.popular_card{
+    padding:1%;
+    border-radius: 20px;
+    margin:20px 0;
+    text-decoration: none;
+    color:black;
+    background-color:white;
+    opacity:1;
+}
+.popular_card_img{
+    width:120px;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-right:10px;
+}
+.popular_card_content_container{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+
+/**  ACTIVITIES  **/
+.activities{
+    margin:30px 0;
+}
+.activities_cards_container {
+    justify-content: space-between;
+    margin-top:30px;
+}
+.col{
+    width:24%;
+}
+.col_2{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activity_card{
+    text-decoration: none;
+    color:black;
+    flex-direction: column;
+    border-radius:30px;
+}
+.full_height_img{
+    height: 400px;
+    object-fit: cover;
+}
+.pomegues_img{
+    height: 200px;
+    object-fit: cover;
+}
+.frioul_img{
+    height: 100px;
+    object-fit: cover;
+}
+.notredame_img{
+    height: 180px;
+    object-fit: cover;
+}
+.longchamp_img{
+    height: 120px;
+    object-fit: cover;
+}
+.card_title--activity{
+    padding:15px 0 15px 15px;
+}
+
+/** FOOTER **/
+
+footer{
+    background-color: #F2F2F2;
+}
+.footer_content{
+    width: 90%;
+    margin:0 auto;
+    margin-top:50px;
+    padding:30px 0px;
+}
+.footer_col {
+    display: flex;
+    flex-direction: column;
+    width:33%;
+}
+.footer_title{
+    margin-bottom:30px;
+    font-size:18px;
+}
+.footer_link{
+    text-decoration: none;
+    color:black;
+    margin-bottom:10px;
+    font-size: 15px;
+}
+.footer_link:hover,
+.footer_link:focus{
+    color:#0065FC;
+}
+
+@media(max-width:992px){
+    .search_filter_title{
+        margin-bottom:-10px;
+        margin-top:30px;
+    }
+    .filters_item{
+        margin:10px 0;
+        margin-right:40px;
+    }
+    .hosting-container{
+        flex-direction: column;
+    }
+    .most-popular{
+       margin-left:0; 
+       width:initial;
+    }
+    .hosting{
+        width: initial;
+        margin:20px 0;
+    }
+    .popular_card_img{
+        width:200px;
+        height: 150px;
+    }
+    .activities_cards_container{
+        flex-direction: column;
+    }
+    .col{
+        width: initial;
+    }
+    .pomegues_img,
+    .frioul_img,
+    .notredame_img,
+    .longchamp_img,
+    .full_height_img{
+        height: 150px;
+    }
+    .margin-top{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        flex-direction:column;
+        max-width:100%;
+    }
+    .header__logo{
+        margin-top:20px;
+    }
+    .header__nav{
+        justify-content: space-between;
+        width:100%;
+    }
+    .nav__link{
+        width:50%;
+        text-align: center;
+        border-top:none;
+        border-bottom:3px solid #F2F2F2;
+        padding:40px 0 20px 0;
+    }
+    .nav__link:hover{
+        border-top:none;
+        border-bottom:3Px solid #0065FC;
+    }
+    .search__form{
+        margin-top:30px;
+    }
+    .form__input{
+        width:100%;
+    }
+    .form__btn--lg{
+        display:none;
+    }
+    .form__btn--sm{
+        display:block;
+        border-radius: 18px;
+        margin-left:-18px;
+    }
+    main{
+        width:100%;
+    }
+    .search{
+        padding:0 30px;
+    }
+    .hosting-container{
+        flex-direction: column-reverse;
+    }
+    .container-radius{
+        border-radius: 0;
+    }
+    .hosting{
+        background-color: white;
+        flex-direction: column;
+    }
+    .hosting_cards{
+        flex-direction: column;
+    }
+    .hosting_card{
+        width: initial;
+    }
+    .activities {
+        padding:0 30px;
+    }
+    .footer_content{
+        flex-direction: column;
+        padding:30px 30px;
+    }
+    .footer_col{
+        margin-bottom: 30px;
+    }
+}
